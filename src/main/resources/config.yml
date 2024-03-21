@@ -1,0 +1,25 @@
+modules:
+  chat:
+    description: Chat module
+    enabled: false
+  antibuild:
+    description: Chat module
+    enabled: false
+  spawn:
+    description: Chat module
+    enabled: false
+  discord:
+    description: Chat module
+    enabled: false
+  discord-link:
+    description: Chat module
+    enabled: false
+  geo:
+    description: Chat module
+    enabled: false
+  protect:
+    description: Chat module
+    enabled: false
+  xmpp:
+    description: Chat module
+    enabled: false
