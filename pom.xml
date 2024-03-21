@@ -35,7 +35,7 @@
               <relocations>
                   <relocation>
                       <pattern>dev.triumphteam.gui</pattern>
-                      <shadedPattern>me.josh.easyessentialsinstall.gui</shadedPattern> <!-- Replace package here here -->
+                      <shadedPattern>me.josh.easyessentialsinstall.gui</shadedPattern>
                   </relocation>
               </relocations>
           </configuration>

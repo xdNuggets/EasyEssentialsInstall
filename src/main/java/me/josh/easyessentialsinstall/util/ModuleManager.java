@@ -29,6 +29,14 @@ public class ModuleManager {
         return modules.stream().filter(module -> module.getName().equalsIgnoreCase(name)).findFirst().orElse(null);
     }
 
+    public boolean isModuleEnabled(String name) {
+        return getModule(name).isEnabled();
+    }
+
+    public boolean isEnabled(Module module) {
+        return module.isEnabled();
+    }
+
     public ArrayList<Module> getModules() {
         return modules;
     }

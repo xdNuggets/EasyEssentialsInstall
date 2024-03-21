@@ -56,8 +56,23 @@ public class CoreCommand extends BaseCommand {
 
 
     @SubCommand("add")
-    public void add(CommandSender sender) {
+    public void add(CommandSender sender, String m) {
+        Module module = EasyEssentialsInstall.getPlugin().getModuleManager().getModule(m);
+        if (module == null) {
+            sender.sendMessage("§cModule not found.");
+            return;
+        }
 
+        if(module.isEnabled()) {
+            sender.sendMessage("§cModule is already enabled.");
+            return;
+        }
+        EasyEssentialsInstall.getPlugin().getModuleManager().enableModule(module);
+        sender.sendMessage("§aModule enabled.");
+        sender.sendMessage("§7Please type §8/eei reload §7to apply changes.");
+        sender.sendMessage("§7Use /eei modules to view all modules.");
     }
+
+
 
 }
